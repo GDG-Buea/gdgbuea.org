@@ -12,7 +12,9 @@ Developers are  individuals that have made substantial contributions (hundreds o
 
 
 1. Isaac Kamga
+
    nick: Rickon Stark
+
    Content Provider
 
 
