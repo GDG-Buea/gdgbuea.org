@@ -1,34 +1,181 @@
 <!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<html>
+
+<head>
+
   <title>GDG Buea</title>
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,400italic,500italic' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" 
+  content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
   <script src="components/webcomponentsjs/webcomponents.js">
   </script>
+
+  <link rel="import" href="components/font-roboto/roboto.html">
+
+  <link rel="import" href="components/core-header-panel/core-header-panel.html">
+  <link rel="import" href="components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="components/paper-tabs/paper-tabs.html">
+ <!--   -->
+
+<link rel="import" href="components/custom-components/gdgbuea-jumbotron/gdgbuea-jumbotron.html" />
   
+  <link rel="import" href="components/custom-components/gdgbuea-calendar/gdgbuea-calendar.html" />
+  <link rel="import" href="components/custom-components/gdgbuea-partner/gdgbuea-partner.html" />
+  <link rel="import" href="components/custom-components/gdgbuea-organizer/gdgbuea-organizer.html" />
+
+
   <style>
-  html,body{
-      margin: 0;
-      padding: 0;
+  html,body {
+    height: 100%;
+    margin: 0;
+    background-color: #EEEEEE;
+    font-family: 'RobotoDraft', sans-serif;
   }
-  body{
-      margin-top: 60px;
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
-      background-color: white;
+
+  core-header-panel{
+    height: 100%;
+    overflow: auto;
+    -webkit-overfolow-scrolling:touch;
   }
-   
-    
-    
+
+  core-toolbar{
+    background: #E84A1C;
+    color: #fff;
+    padding-left: 50px;
+  }
+  #tabs{
+    width: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    text-transform: uppercase;
+  }
+  paper-tab a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .container {
+    width: 80%;
+    margin: 50px auto;
+  }
+  @media (min-width: 481px) {
+    #tabs {
+      min-width: 200px;
+      
+    }
+    #contenue {
+      width: 100%;
+    }
+  }
+ /* #contenue div{
+    width: 75%;
+    height: 768px;
+    background-color: #aba;
+   text-align:  center;
+    margin: 50px auto;
+    padding-top: 250px;
+  }*/
   </style>
-  </head>
-  <body unresolved>
-  
-  
-  
-  </body>
-  </html>
+
+</head>
+
+<body unresolved>
+
+<core-header-panel>
+  <core-toolbar>
+    <paper-tabs id="tabs" selected="0" >
+    <paper-tab><a href="#image" horizontal center-center layout><img src="images/logosmall.png"></a></paper-tab>
+    <paper-tab><a href="#home" horizontal center-center layout>Home</a></paper-tab>
+    <paper-tab><a href="#about" horizontal center-center layout>About</a></paper-tab>
+    <paper-tab><a href="#events" horizontal center-center layout>Events</a></paper-tab>
+    <paper-tab><a href="#join" horizontal center-center layout>Join</a></paper-tab>
+    <paper-tab><a href="#contact us" horizontal center-center layout>Contact Us</a></paper-tab>
+    <paper-tab><a href="#partners" horizontal center-center layout>Partners</a></paper-tab>
+    <paper-tab><a href="#resources" horizontal center-center layout>resources</a></paper-tab>
+    </paper-tabs>
+  </core-toolbar>
+<!-- main page -->
+<!-- this the post card code here -->
+
+<div id="contenue" layout vertical center>
+  <!-- <post-list show="all"></post-list>
+  <post-comment><input></input> </post-comment> -->
+  <div id="home">
+
+    <!-- Jumbo ======================-->
+
+    <H1>YES THIS YOUR ITEM  I</H1>
+
+    <!-- Jumbo ======================--> 
+
+  </div>
+  <div id="about">
+    <gdgbuea-organizer link="https://plus.google.com/108196826772057594196/about
+" name="Isaac Kamga" role="Community Manager" image="images/isaac_kamga.jpg"></gdgbuea-organizer>
+    <gdgbuea-organizer link="https://plus.google.com/110533699479797828285/about
+" name="Otto Akama" role="Assistant Manager" image="images/paul.jpg"></gdgbuea-organizer>
+    <gdgbuea-organizer link="https://plus.google.com/u/0/107067841106289821727/about
+" name="Ngole Brinsley" role="Marketing Manager" image="images/ngole_brinsley.jpg"></gdgbuea-organizer>
+    <gdgbuea-organizer link="https://plus.google.com/102425594519879388722/about
+" name="Chick Delveri" role="Technical Manager" image="images/chick.jpg"></gdgbuea-organizer>
+  </div>
+  <div id="events">
+    <gdgbuea-calendar>
+    </gdgbuea-calendar>
+  </div>
+  <div id="join">
+    <H1>Join Us</H1>
+    <ul>
+      <li>Click the "I'm a member" button on the <a href="https://developers.google.com/groups/chapter/100289274059280359416/">GDG Directory </a> </li>
+      <li>"Follow" us on <a href="http://plus.google.com/100289274059280359416">Google+</a></li>
+      <li>"Like" us on <a href="https://www.facebook.com/gdgbuea">facebook </a></li>
+      <li>Join our <a href="https://groups.google.com/forum/#!forum/gdgbuea">mailing list </a></li>
+
+      <li>Chat with us on IRC (#ublab on freenode server)</li>
+
+    </ul>
+
+  </div>
+  <div id="contact us">
+    <H1>Contact Us</H1>
+
+    <ul>
+
+     <li> Call +237674106297 </li>
+
+      <li>Write info AT gdgbuea DOT org</li>
+
+    </ul>
+
+  </div>
+  <div id="partners">
+    <H1>YES THIS YOUR ITEM  6</H1>
+  </div>
+  <div id="resources">
+    <H1>YES THIS YOUR ITEM  7</H1>
+  </div>
+</div>
+
+<div class="container" layout vertical center>
+
+    
+</div>
+
+
+</core-header-panel>
+<!-- this is to switch from one tab to another -->
+<script>
+var tabs = document.querySelector('paper-tabs');
+var list = document.querySelector('post-list');
+
+tabs.addEventListener('core-select', function() {
+  list.show = tabs.selected;
+});
+</script>
+
+
+</body>
+
+</html>
