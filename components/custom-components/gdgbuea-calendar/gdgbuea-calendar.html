@@ -1,0 +1,41 @@
+<link rel="import" href="../../polymer/polymer.html">
+<polymer-element name="gdgbuea-calendar">
+  <template>
+    <style>
+    :host {
+      display: block;
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      width: 1280px;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    .calendar-header {
+      margin-bottom: 10px;
+    }
+    .calendar-header {
+  margin-bottom: 10px;
+}
+polyfill-next-selector { content: '.calendar-header iframe'; }
+.calendar-header ::content iframe {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+
+    </style>
+<div class="calendar-header" layout horizontal center>
+  
+<iframe src="https://www.google.com/calendar/embed?src=u2isaac%40gmail.com&ctz=Africa/Douala" style="border: 0" width="1300" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+
+    <!-- CARD CONTENTS GO HERE -->
+  </template>
+
+    <script>
+  Polymer({});
+  </script>
+</polymer-element>
