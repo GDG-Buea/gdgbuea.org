@@ -1,7 +1,3 @@
-#Only pics in the upload folder so no need to track
-
-devfest/upload
-
 #Do not track temp files created by text editors
 
 *~
